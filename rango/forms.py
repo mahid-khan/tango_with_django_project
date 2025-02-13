@@ -10,9 +10,9 @@ class CategoryForm(forms.ModelForm):
     likes = forms.IntegerField(widget=forms.HiddenInput(), initial=0)
     slug = forms.CharField(widget=forms.HiddenInput(), required=False)
 
-    # An inline class to provide additional information on the form.
+
     class Meta:
-        # Provide an association between the ModelForm and a model
+
         model = Category
         fields = ('name',)
 
