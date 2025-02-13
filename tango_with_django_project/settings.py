@@ -128,3 +128,6 @@ STATIC_URL = '/static/'
 
 # LOGIN URL VARIABLE
 LOGIN_URL = 'rango:login'
+
+# Enabling browser-length sessions, as it was disabled by default.
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
